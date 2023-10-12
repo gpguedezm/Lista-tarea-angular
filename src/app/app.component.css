@@ -1,0 +1,47 @@
+body, html {
+   font-family: 'Raleway', sans-serif;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* El contenedor se expandirá al 100% del alto de la ventana */
+}
+
+header {
+   background-color: #333333;
+   color: #ffffff;
+   padding: 20px;
+}
+
+main {
+   flex: 1; /* El cuerpo ocupa todo el espacio disponible restante */
+   overflow-y: auto; /* Agrega desplazamiento vertical si el contenido es demasiado largo */
+   padding: 20px;
+}
+
+.tasksList {
+   list-style: none;
+}
+
+.tasksListButton {
+   margin-left: 20px;
+}
+
+.taskCheckbox:checked + label {
+   color: #696969; /* Cambia el color del texto */
+   text-decoration: line-through; /* */
+
+ }
+
+
+footer {
+   background-color: #333333;
+   color: #ffffff;
+   padding: 20px;
+   text-align: center;
+   flex-wrap: wrap;
+}
